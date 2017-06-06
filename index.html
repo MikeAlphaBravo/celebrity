@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>CelebMatch</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Celebrity Dating Match-O-Meter</h1>
+
+      <p>Input a bunch of information and we can let you know who you should date:</p>
+
+      <form id="dating">
+        <label for="age">Age</label>
+        <input id="age" type="text">
+        <br><br>
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+        </select>
+        <h2>Please enter what results you wish to display:</h2>
+        <div id="preference" class="radio">
+          <label><input type="radio" name="preference" value="female">Female</label>
+        </div>
+        <div id="preference" class="radio">
+          <label><input type="radio" name="preference" value="male">Male</label>
+        </div>
+        <div id="preference" class="radio">
+          <label><input type="radio" name="preference" value="all">All</label>
+        </div>
+
+        <h2>Ready to submit your choices?</h2>
+        <button type="submit" class="btn">Find my Soulmate</button>
+      </form>
+      <br><br>
+      <div id="match">
+        <p>We found your match!  It is: <span id="celebrity"></span> and you should totally call them now.</p>
+      </div>
+    </div>
+  </body>
+</html>
