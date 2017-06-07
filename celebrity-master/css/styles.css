@@ -1,0 +1,8 @@
+
+.low, .mid, .midHigh, .high {
+  display: none;
+}
+
+#match {
+  margin-top: 25px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>CelebMatch</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Celebrity Dating Match-O-Meter</h1>
+
+      <p>Input a bunch of information and we can let you know who you should date:</p>
+      <div id="dating">
+        <form>
+          <h3>What is your age group?</h3>
+          <div class="radio">
+            <label><input type="radio" name="Q1" value="1">20-30</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="Q1" value="5">30-40</label>
+          </div>
+
+          <h3>What is your gender identity?</h3>
+          <div class="radio">
+            <label><input type="radio" name="Q2" value="1">Male</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="Q2" value="5">Female</label>
+          </div>
+
+          <h3>What is your dating gender preference?</h3>
+          <div class="radio">
+            <label><input type="radio" name="Q3" value="1">Male</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="Q3" value="5">Female</label>
+          </div>
+
+          <h3>Ready to submit your choices?</h3>
+          <button type="submit" class="btn">Find my Soulmate</button>
+
+        </form>
+      </div>
+      <div id="match">
+        <p>We found your match!  It is:
+          <span class="low">Channing Tatum</span>
+          <span class="mid">Emma Stone</span>
+          <span class="midHigh">Rock Hudson</span>
+          <span class="high">Barbara Streisend</span>
+        </p>
+        <p>You should totally call them, like right now!</p>
+      </div>
+    </div>
+  </body>
+</html>
