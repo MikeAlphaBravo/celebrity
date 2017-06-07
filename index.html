@@ -12,34 +12,45 @@
       <h1>Celebrity Dating Match-O-Meter</h1>
 
       <p>Input a bunch of information and we can let you know who you should date:</p>
+      <div id="dating">
+        <form>
+          <h3>What is your age group?</h3>
+          <div class="radio">
+            <label><input type="radio" name="Q1" value="1">20-30</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="Q1" value="5">30-40</label>
+          </div>
 
-      <form id="dating">
-        <label for="age">Age</label>
-        <input id="age" type="text">
-        <br><br>
-        <label for="gender">Gender</label>
-        <select id="gender">
-          <option value="female">Female</option>
-          <option value="male">Male</option>
-          <option value="other">Other</option>
-        </select>
-        <h2>Please enter what results you wish to display:</h2>
-        <div id="preference" class="radio">
-          <label><input type="radio" name="preference" value="female">Female</label>
-        </div>
-        <div id="preference" class="radio">
-          <label><input type="radio" name="preference" value="male">Male</label>
-        </div>
-        <div id="preference" class="radio">
-          <label><input type="radio" name="preference" value="all">All</label>
-        </div>
+          <h3>What is your gender identity?</h3>
+          <div class="radio">
+            <label><input type="radio" name="Q2" value="1">Male</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="Q2" value="5">Female</label>
+          </div>
 
-        <h2>Ready to submit your choices?</h2>
-        <button type="submit" class="btn">Find my Soulmate</button>
-      </form>
-      <br><br>
+          <h3>What is your dating gender preference?</h3>
+          <div class="radio">
+            <label><input type="radio" name="Q3" value="1">Male</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="Q3" value="5">Female</label>
+          </div>
+
+          <h3>Ready to submit your choices?</h3>
+          <button type="submit" class="btn">Find my Soulmate</button>
+
+        </form>
+      </div>
       <div id="match">
-        <p>We found your match!  It is: <span id="celebrity"></span> and you should totally call them now.</p>
+        <p>We found your match!  It is:
+          <span class="low">Channing Tatum</span>
+          <span class="mid">Emma Stone</span>
+          <span class="midHigh">Rock Hudson</span>
+          <span class="high">Barbara Streisend</span>
+        </p>
+        <p>You should totally call them, like right now!</p>
       </div>
     </div>
   </body>

@@ -1,8 +1,8 @@
 
-.btn {
-  display: block;
+.low, .mid, .midHigh, .high {
+  display: none;
 }
 
 #match {
-  display: none;
+  margin-top: 25px;
 }
